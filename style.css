@@ -11,7 +11,7 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 10px 20px;
+    padding: 10px 15px;
     background-color: #222;
     position: fixed;
     width: 100%;
@@ -31,18 +31,19 @@ header {
 nav {
     display: flex;
     align-items: center;
+    gap: 10px; /* Biar lebih dekat */
 }
 
 .nav-links {
     list-style: none;
     display: flex;
-    gap: 10px;
+    gap: 8px;
 }
 
 .nav-links li a {
     text-decoration: none;
     color: white;
-    padding: 6px 12px;
+    padding: 6px 10px;
     transition: 0.3s;
 }
 
@@ -54,7 +55,7 @@ nav {
 /* Tombol Menu Mobile */
 .menu-toggle {
     display: none;
-    font-size: 24px;
+    font-size: 22px;
     background: none;
     border: none;
     color: white;
@@ -88,7 +89,7 @@ nav {
 .gallery {
     display: flex;
     justify-content: center;
-    gap: 15px;
+    gap: 10px;
     padding: 20px;
     background-color: #222;
 }
@@ -114,6 +115,8 @@ nav {
         right: 10px;
         background-color: #222;
         border-radius: 5px;
+        padding: 10px;
+        width: auto;
     }
 
     .nav-links.active {
@@ -122,5 +125,9 @@ nav {
 
     .menu-toggle {
         display: block;
+    }
+
+    .nav-links li {
+        margin: 5px 0;
     }
 }
