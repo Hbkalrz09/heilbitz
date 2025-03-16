@@ -12,7 +12,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 15px 40px;
+    padding: 10px 20px;
     background-color: #222;
     position: fixed;
     width: 100%;
@@ -32,7 +32,7 @@ header {
 nav ul {
     list-style: none;
     display: flex;
-    gap: 12px;
+    gap: 8px;
     margin: 0;
     padding: 0;
 }
@@ -44,7 +44,7 @@ nav ul li {
 nav ul li a {
     text-decoration: none;
     color: white;
-    padding: 8px 15px;
+    padding: 6px 10px;
     transition: 0.3s;
     white-space: nowrap;
 }
