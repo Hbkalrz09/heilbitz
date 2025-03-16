@@ -31,7 +31,7 @@ header {
 nav {
     display: flex;
     align-items: center;
-    gap: 10px; /* Mengurangi jarak */
+    gap: 10px;
 }
 
 .nav-links {
@@ -85,24 +85,56 @@ nav {
     border-radius: 5px;
 }
 
-/* Gallery */
+/* Gallery Section */
 .gallery {
     display: flex;
-    justify-content: center;
-    gap: 10px;
+    flex-direction: column;
+    gap: 20px;
     padding: 20px;
-    background-color: #222;
 }
 
-.card {
-    width: 100px;
-    height: 100px;
-    background-color: black;
-    color: white;
+.gallery-item {
     display: flex;
     align-items: center;
-    justify-content: center;
-    border: 1px solid red;
+    justify-content: space-between;
+    background: #222;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.text-box {
+    width: 40%;
+    color: white;
+}
+
+.text-box h2 {
+    color: red;
+}
+
+.gallery-item img {
+    width: 60%;
+    border-radius: 8px;
+}
+
+/* Testimonial Section */
+.testimonial {
+    background: #111;
+    color: white;
+    text-align: center;
+    padding: 40px;
+    margin-top: 20px;
+}
+
+.testimonial-container {
+    font-size: 1.2rem;
+    font-style: italic;
+}
+
+#testimonial-author {
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
+    color: red;
 }
 
 /* Footer */
@@ -139,7 +171,6 @@ footer a:hover {
         background-color: #222;
         border-radius: 5px;
         padding: 10px;
-        width: auto;
     }
 
     .nav-links.active {
@@ -150,7 +181,16 @@ footer a:hover {
         display: block;
     }
 
-    .nav-links li {
-        margin: 5px 0;
+    .gallery-item {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .text-box {
+        width: 100%;
+    }
+
+    .gallery-item img {
+        width: 100%;
     }
 }
