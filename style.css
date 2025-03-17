@@ -1,112 +1,94 @@
 /* Reset */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-/* Variabel Warna */
-:root {
-    --bg-color: #111;
-    --text-color: white;
-    --nav-bg: black;
-    --highlight: red;
-    --transparent-red: rgba(255, 0, 0, 0.5);
-}
-
-.light-mode {
-    --bg-color: white;
-    --text-color: black;
-    --nav-bg: #f0f0f0;
-    --highlight: black;
-    --transparent-red: rgba(0, 0, 0, 0.1);
-}
-
 body {
-    background-color: var(--bg-color);
-    color: var(--text-color);
+    margin: 0;
     font-family: Arial, sans-serif;
+    background: #111;
+    color: white;
+    text-align: center;
 }
 
 /* Navbar */
 .navbar {
     display: flex;
     justify-content: space-between;
+    padding: 10px 20px;
+    background: black;
     align-items: center;
-    padding: 15px 20px;
-    background-color: var(--nav-bg);
-    position: fixed;
-    width: 100%;
-    top: 0;
 }
-
-.navbar .logo {
-    font-size: 22px;
+.logo {
+    color: red;
+    font-size: 24px;
     font-weight: bold;
-    color: var(--highlight);
+}
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+.nav-links a, .theme-toggle {
+    color: white;
     text-decoration: none;
 }
-
 .menu-toggle {
+    display: none;
     font-size: 24px;
-    cursor: pointer;
-    color: var(--text-color);
-}
-
-/* Hero (Background Merah) */
-.hero {
-    background-color: var(--highlight);
+    background: none;
     color: white;
-    text-align: center;
-    padding: 100px 20px;
+    border: none;
 }
 
-.hero-content h1 {
-    font-size: 48px;
-}
-
-/* Section */
-.content {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+/* Header */
+.hero {
+    background: red;
     padding: 50px;
 }
-
-.content.reverse {
-    flex-direction: row-reverse;
+.hero-content h1 {
+    font-size: 36px;
 }
 
-.content .text {
-    width: 50%;
+/* Introduction */
+.introduction {
+    padding: 20px;
 }
 
-.content img {
-    width: 50%;
-    border-radius: 10px;
+/* Gallery */
+.gallery {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    padding: 20px;
+}
+.gallery-item img {
+    width: 100px;
+}
+
+/* Options */
+.options {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+    background: rgba(255, 0, 0, 0.2);
+}
+.option-box img {
+    width: 100px;
 }
 
 /* Testimonial */
-.testimonial {
-    text-align: center;
-    padding: 50px;
+.testimonials {
+    padding: 20px;
 }
-
 .testimonial-box {
-    background: var(--highlight);
-    color: white;
+    background: red;
     padding: 20px;
     border-radius: 10px;
 }
 
 /* Footer */
 footer {
-    background-color: var(--nav-bg);
-    text-align: center;
-    padding: 20px;
+    padding: 10px;
+    background: black;
 }
-
 .social-links a {
-    color: var(--highlight);
-    margin: 0 10px;
+    color: red;
 }
