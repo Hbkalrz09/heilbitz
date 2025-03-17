@@ -5,7 +5,7 @@
     box-sizing: border-box;
 }
 
-body, html {
+body {
     background-color: var(--bg-color);
     color: var(--text-color);
     font-family: Arial, sans-serif;
@@ -17,27 +17,28 @@ body, html {
     --text-color: white;
     --nav-bg: black;
     --highlight: red;
+    --transparent-red: rgba(255, 0, 0, 0.5);
 }
 
 .light-mode {
     --bg-color: white;
     --text-color: black;
-    --nav-bg: #ddd;
-    --highlight: blue;
+    --nav-bg: #f0f0f0;
+    --highlight: black;
+    --transparent-red: rgba(0, 0, 0, 0.1);
 }
 
 /* Navbar */
 .navbar {
     display: flex;
-    align-items: center;
     justify-content: space-between;
+    align-items: center;
     padding: 15px 20px;
     background-color: var(--nav-bg);
     position: fixed;
     width: 100%;
     top: 0;
     left: 0;
-    z-index: 1000;
 }
 
 .navbar .logo {
@@ -47,57 +48,84 @@ body, html {
     text-decoration: none;
 }
 
-/* Header */
-.hero {
-    text-align: center;
-    padding: 100px 20px;
-    background-color: var(--highlight);
-    color: white;
-}
-
-/* Gambar Besar */
-.big-image img, .mid-image img {
-    width: 100%;
-    display: block;
-}
-
-/* Introduction */
-.introduction {
-    text-align: center;
-    padding: 50px;
-}
-
-/* Kolom Info dengan Gambar & Tombol */
-.info-box {
-    display: flex;
-    align-items: center;
-    padding: 50px;
-    background-color: var(--nav-bg);
-}
-
-.info-box img {
-    width: 50%;
-}
-
-.info-text {
-    padding: 20px;
+.menu-toggle {
+    font-size: 24px;
+    cursor: pointer;
     color: var(--text-color);
 }
 
-.btn {
-    display: inline-block;
-    padding: 10px 20px;
+/* Hero */
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     background-color: var(--highlight);
     color: white;
-    text-decoration: none;
-    margin-top: 10px;
+    padding: 80px;
+}
+
+.hero-image {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+
+.hero-text {
+    font-size: 36px;
+}
+
+/* Small Images */
+.small-images {
+    display: flex;
+    justify-content: center;
+    padding: 50px;
+}
+
+.small-images .item {
+    text-align: center;
+    margin: 0 10px;
+}
+
+.small-images img {
+    width: 100px;
+    height: 100px;
+    border-radius: 10px;
+}
+
+/* Opsi dengan Foto */
+.option {
+    background-color: var(--transparent-red);
+    padding: 50px;
+    text-align: center;
+}
+
+.option-content img {
+    width: 200px;
+    border-radius: 10px;
 }
 
 /* Testimonial */
 .testimonial {
     text-align: center;
     padding: 50px;
-    font-style: italic;
+}
+
+.testimonial-box {
+    position: relative;
+    padding: 20px;
+    background: var(--highlight);
+    color: white;
+    border-radius: 10px;
+}
+
+.testi-bg {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    left: 10px;
+    top: 10px;
 }
 
 /* Footer */
