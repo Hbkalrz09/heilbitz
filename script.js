@@ -18,11 +18,11 @@ document.addEventListener("DOMContentLoaded", function () {
 
     // Testimonial Slider
     const testimonials = [
-        { text: '"Website ini sangat membantu!"', name: "- User 1" },
-        { text: '"Desainnya keren dan modern."', name: "- User 2" },
-        { text: '"Navigasi sangat mudah digunakan."', name: "- User 3" },
-        { text: '"Mode gelapnya sangat nyaman!"', name: "- User 4" },
-        { text: '"Saya suka animasi smooth di sini!"', name: "- User 5" }
+        { text: '"Website ini sangat keren!"', name: "- User 1" },
+        { text: '"Desainnya modern dan clean."', name: "- User 2" },
+        { text: '"Sangat mudah digunakan."', name: "- User 3" },
+        { text: '"Navigasinya nyaman!"', name: "- User 4" },
+        { text: '"Fitur-fiturnya lengkap!"', name: "- User 5" }
     ];
 
     let index = 0;
