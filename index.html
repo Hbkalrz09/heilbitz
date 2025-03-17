@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HeilBitz</title>
     <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
 </head>
 <body>
 
@@ -20,51 +21,44 @@
         </div>
     </nav>
 
-    <!-- Header -->
+    <!-- Header (Background Merah) -->
     <header class="hero">
-        <img src="images/profile.jpg" alt="Profile" class="hero-image">
-        <h1 class="hero-text">HeilBitz</h1>
+        <div class="hero-content">
+            <h1>HeilBitz</h1>
+            <p>Website yang menampilkan proyek terbaik saya!</p>
+        </div>
     </header>
 
-    <!-- Introduction -->
-    <section class="introduction">
-        <h2>Introduction</h2>
-        <p>Selamat datang di website saya! Saya mengerjakan berbagai proyek menarik dalam dunia teknologi, desain, dan pengembangan web.</p>
-    </section>
+    <!-- Main Content -->
+    <main>
+        <!-- Section 1 -->
+        <section class="content">
+            <div class="text">
+                <h2>Introduction</h2>
+                <p>Selamat datang di website saya! Ini adalah tempat saya berbagi proyek, karya, dan pengalaman saya.</p>
+            </div>
+            <img src="images/section1.jpg" alt="Gambar 1">
+        </section>
 
-    <!-- Tiga Foto Kecil dengan Teks -->
-    <section class="small-images">
-        <div class="item">
-            <img src="images/img1.jpg" alt="Image 1">
-            <p>Deskripsi 1</p>
-        </div>
-        <div class="item">
-            <img src="images/img2.jpg" alt="Image 2">
-            <p>Deskripsi 2</p>
-        </div>
-        <div class="item">
-            <img src="images/img3.jpg" alt="Image 3">
-            <p>Deskripsi 3</p>
-        </div>
-    </section>
+        <!-- Section 2 -->
+        <section class="content reverse">
+            <img src="images/section2.jpg" alt="Gambar 2">
+            <div class="text">
+                <h2>Eksplorasi Proyek</h2>
+                <p>Berbagai proyek saya yang bisa Anda jelajahi lebih lanjut.</p>
+                <button>Selengkapnya</button>
+            </div>
+        </section>
 
-    <!-- Opsi dengan Foto dan Teks -->
-    <section class="option">
-        <div class="option-content">
-            <img src="images/option.jpg" alt="Option">
-            <p>Opsi menarik dengan desain yang keren.</p>
-        </div>
-    </section>
-
-    <!-- Testimonial -->
-    <section class="testimonial">
-        <h2>What People Say</h2>
-        <div class="testimonial-box">
-            <img src="images/testi-bg.jpg" alt="Testimonial Background" class="testi-bg">
-            <p id="testimonial-text">"Website ini sangat membantu!"</p>
-            <h3 id="testimonial-name">- User 1</h3>
-        </div>
-    </section>
+        <!-- Testimonial -->
+        <section class="testimonial">
+            <h2>Testimoni</h2>
+            <div class="testimonial-box">
+                <p id="testimonial-text">"Website ini sangat keren!"</p>
+                <h3 id="testimonial-name">- User 1</h3>
+            </div>
+        </section>
+    </main>
 
     <!-- Footer -->
     <footer>
@@ -76,6 +70,5 @@
         </div>
     </footer>
 
-    <script src="script.js"></script>
 </body>
 </html>
