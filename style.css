@@ -1,94 +1,101 @@
-/* Reset */
 body {
     margin: 0;
     font-family: Arial, sans-serif;
-    background: #111;
+    background-color: #111;
     color: white;
     text-align: center;
 }
 
-/* Navbar */
 .navbar {
     display: flex;
     justify-content: space-between;
-    padding: 10px 20px;
-    background: black;
     align-items: center;
+    padding: 15px;
+    background: black;
 }
-.logo {
-    color: red;
+
+.navbar .logo {
     font-size: 24px;
     font-weight: bold;
+    color: red;
 }
-.nav-links {
-    list-style: none;
-    display: flex;
-    gap: 20px;
+
+.navbar nav {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 50px;
+    right: 0;
+    background: black;
+    width: 200px;
+    text-align: left;
+    padding: 10px;
 }
-.nav-links a, .theme-toggle {
+
+.navbar nav a, .navbar nav button {
+    display: block;
+    padding: 10px;
     color: white;
     text-decoration: none;
 }
+
 .menu-toggle {
-    display: none;
     font-size: 24px;
-    background: none;
-    color: white;
-    border: none;
+    cursor: pointer;
 }
 
-/* Header */
 .hero {
     background: red;
-    padding: 50px;
+    padding: 50px 0;
 }
-.hero-content h1 {
+
+.hero img {
+    width: 100px;
+    border-radius: 50%;
+}
+
+.hero h1 {
     font-size: 36px;
 }
 
-/* Introduction */
-.introduction {
-    padding: 20px;
-}
-
-/* Gallery */
 .gallery {
     display: flex;
     justify-content: center;
-    gap: 10px;
+    gap: 20px;
     padding: 20px;
 }
-.gallery-item img {
-    width: 100px;
+
+.gallery-item {
+    text-align: center;
 }
 
-/* Options */
 .options {
     display: flex;
     justify-content: center;
     gap: 20px;
+    background: rgba(255, 0, 0, 0.5);
     padding: 20px;
-    background: rgba(255, 0, 0, 0.2);
-}
-.option-box img {
-    width: 100px;
 }
 
-/* Testimonial */
-.testimonials {
+.option {
+    text-align: center;
+}
+
+.testimonial {
     padding: 20px;
 }
+
 .testimonial-box {
     background: red;
-    padding: 20px;
-    border-radius: 10px;
+    padding: 10px;
 }
 
-/* Footer */
 footer {
-    padding: 10px;
     background: black;
+    padding: 20px;
 }
-.social-links a {
+
+footer a {
     color: red;
+    margin: 10px;
 }
