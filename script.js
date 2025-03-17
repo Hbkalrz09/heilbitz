@@ -1,28 +1,18 @@
-document.addEventListener("DOMContentLoaded", () => {
-    document.getElementById("year").textContent = new Date().getFullYear();
-
+document.addEventListener("DOMContentLoaded", function () {
     const menuToggle = document.querySelector(".menu-toggle");
-    const navLinks = document.querySelector(".nav-links");
+    const navFullscreen = document.querySelector(".nav-fullscreen");
+    const toggleModeBtn = document.querySelectorAll(".toggle-mode");
 
-    menuToggle.addEventListener("click", () => {
-        navLinks.classList.toggle("active");
+    // Toggle Fullscreen Menu
+    menuToggle.addEventListener("click", function () {
+        navFullscreen.classList.toggle("show");
     });
 
-    // Testimonial Rotator
-    const testimonials = [
-        { text: '"Website ini sangat membantu!"', author: "- User 1" },
-        { text: '"Desainnya keren dan elegan."', author: "- User 2" },
-        { text: '"Navigasi sangat mudah digunakan."', author: "- User 3" },
-        { text: '"Sangat direkomendasikan!"', author: "- User 4" },
-        { text: '"Layanan pelanggan sangat responsif."', author: "- User 5" },
-    ];
-
-    let currentIndex = 0;
-    function updateTestimonial() {
-        document.getElementById("testimonial-text").textContent = testimonials[currentIndex].text;
-        document.getElementById("testimonial-author").textContent = testimonials[currentIndex].author;
-        currentIndex = (currentIndex + 1) % testimonials.length;
-    }
-
-    setInterval(updateTestimonial, 5000);
+    // Toggle Dark/Light Mode
+    toggleModeBtn.forEach((btn) => {
+        btn.addEventListener("click", function () {
+            document.body.classList.toggle("light-mode");
+            this.textContent = document.body.classList.contains("light-mode") ? "Light Mode" : "Dark Mode";
+        });
+    });
 });
