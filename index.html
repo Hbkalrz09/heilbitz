@@ -5,71 +5,72 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Website</title>
     <link rel="stylesheet" href="style.css">
-    <script defer src="script.js"></script>
 </head>
 <body>
 
-<header>
-    <div class="logo"><a href="#">MyLogo</a></div>
-    <nav>
-        <button class="menu-toggle">☰</button>
-        <ul class="nav-links">
-            <li><a href="#">Projects</a></li>
-            <li><a href="#">About Me</a></li>
-            <li><a href="#">Support</a></li>
-        </ul>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <a href="#" class="logo">MyLogo</a>
+        <div class="menu-toggle">☰</div>
+        <div class="nav-links">
+            <a href="#projects">Projects</a>
+            <a href="#about">About Me</a>
+            <a href="#support">Support</a>
+            <button class="toggle-mode">Dark Mode</button>
+        </div>
     </nav>
-</header>
 
-<section class="hero">
-    <h1>Selamat Datang di Website</h1>
-    <p>Tempat terbaik untuk menemukan sesuatu yang menarik.</p>
-    <a href="#" class="btn">Lihat Selengkapnya</a>
-</section>
+    <!-- Fullscreen Menu -->
+    <div class="nav-fullscreen">
+        <a href="#projects">Projects</a>
+        <a href="#about">About Me</a>
+        <a href="#support">Support</a>
+        <button class="toggle-mode">Dark Mode</button>
+    </div>
 
-<!-- Gallery Section -->
-<section class="gallery">
-    <div class="gallery-item">
-        <div class="text-box">
-            <h2>Judul Gambar 1</h2>
-            <p>Deskripsi gambar pertama yang menarik.</p>
+    <!-- Hero Section -->
+    <header class="hero">
+        <h1>Welcome to My Website</h1>
+        <p>Explore my projects and learn more about me.</p>
+    </header>
+
+    <!-- Projects Section -->
+    <section id="projects" class="gallery">
+        <div class="gallery-item">
+            <img src="images/gambar1.jpg" alt="Gambar 1">
+            <div class="text">
+                <h2>Project 1</h2>
+                <p>Deskripsi singkat tentang project ini.</p>
+            </div>
         </div>
-        <img src="https://via.placeholder.com/800x400" alt="Gambar 1">
-    </div>
-    <div class="gallery-item">
-        <div class="text-box">
-            <h2>Judul Gambar 2</h2>
-            <p>Deskripsi gambar kedua yang menarik.</p>
+
+        <div class="gallery-item">
+            <img src="images/gambar2.jpg" alt="Gambar 2">
+            <div class="text">
+                <h2>Project 2</h2>
+                <p>Deskripsi singkat tentang project ini.</p>
+            </div>
         </div>
-        <img src="https://via.placeholder.com/800x400" alt="Gambar 2">
-    </div>
-    <div class="gallery-item">
-        <div class="text-box">
-            <h2>Judul Gambar 3</h2>
-            <p>Deskripsi gambar ketiga yang menarik.</p>
+
+        <div class="gallery-item">
+            <img src="images/gambar3.jpg" alt="Gambar 3">
+            <div class="text">
+                <h2>Project 3</h2>
+                <p>Deskripsi singkat tentang project ini.</p>
+            </div>
         </div>
-        <img src="https://via.placeholder.com/800x400" alt="Gambar 3">
-    </div>
-</section>
+    </section>
 
-<!-- Testimonial Section -->
-<section class="testimonial">
-    <div class="testimonial-container">
-        <p id="testimonial-text">"Website ini sangat membantu!"</p>
-        <span id="testimonial-author">- User 1</span>
-    </div>
-</section>
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 My Website. All Rights Reserved.</p>
+        <div class="social-links">
+            <a href="https://discord.com">Discord</a> |
+            <a href="https://youtube.com">YouTube</a> |
+            <a href="https://instagram.com">Instagram</a>
+        </div>
+    </footer>
 
-<!-- Footer -->
-<footer>
-    <p>&copy; <span id="year"></span> MyWebsite. All rights reserved.</p>
-    <p>Hubungi: <a href="mailto:contact@email.com">contact@email.com</a></p>
-    <div class="social-links">
-        <a href="https://discord.gg/yourserver" target="_blank">Discord</a>
-        <a href="https://youtube.com/yourchannel" target="_blank">YouTube</a>
-        <a href="https://instagram.com/yourprofile" target="_blank">Instagram</a>
-    </div>
-</footer>
-
+    <script src="script.js"></script>
 </body>
 </html>
