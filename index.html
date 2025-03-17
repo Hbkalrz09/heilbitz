@@ -4,82 +4,76 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HeilBitz</title>
-    <link rel="stylesheet" href="styles.css">
-    <script defer src="script.js"></script>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <!-- Navbar -->
-    <nav class="navbar">
-        <a href="#" class="logo">HeilBitz</a>
-        <button class="menu-toggle" onclick="toggleMenu()">☰</button>
-        <ul class="nav-links">
-            <li><a href="#">Projects</a></li>
-            <li><a href="#">About Me</a></li>
-            <li><a href="#">Support</a></li>
-            <li><button class="theme-toggle" onclick="toggleTheme()">Dark Mode</button></li>
-        </ul>
-    </nav>
+    <header class="navbar">
+        <div class="logo">HeilBitz</div>
+        <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+        <nav id="nav-menu">
+            <a href="#">Projects</a>
+            <a href="#">About Me</a>
+            <a href="#">Support</a>
+            <button onclick="toggleDarkMode()">Dark Mode</button>
+        </nav>
+    </header>
 
-    <!-- Header -->
-    <header class="hero">
+    <section class="hero">
         <div class="hero-content">
+            <img src="profile.jpg" alt="Foto Profil">
             <h1>HeilBitz</h1>
             <p>Website yang menampilkan proyek terbaik saya!</p>
         </div>
-    </header>
+    </section>
 
-    <!-- Introduction -->
     <section class="introduction">
         <h2>Introduction</h2>
         <p>Selamat datang di website saya! Ini adalah tempat saya berbagi proyek, karya, dan pengalaman.</p>
     </section>
 
-    <!-- Grid Gambar -->
     <section class="gallery">
         <div class="gallery-item">
-            <img src="img1.jpg" alt="Gambar 1">
+            <img src="gambar1.jpg" alt="Gambar 1">
             <p>Gambar 1</p>
         </div>
         <div class="gallery-item">
-            <img src="img2.jpg" alt="Gambar 2">
+            <img src="gambar2.jpg" alt="Gambar 2">
             <p>Gambar 2</p>
         </div>
         <div class="gallery-item">
-            <img src="img3.jpg" alt="Gambar 3">
+            <img src="gambar3.jpg" alt="Gambar 3">
             <p>Gambar 3</p>
         </div>
     </section>
 
-    <!-- Opsi -->
     <section class="options">
-        <div class="option-box">
+        <div class="option">
             <img src="option1.jpg" alt="Option 1">
             <p>Opsi 1</p>
             <button>Selengkapnya</button>
         </div>
-        <div class="option-box">
+        <div class="option">
             <img src="option2.jpg" alt="Option 2">
             <p>Opsi 2</p>
             <button>Selengkapnya</button>
         </div>
     </section>
 
-    <!-- Testimoni -->
-    <section class="testimonials">
+    <section class="testimonial">
         <h2>Testimoni</h2>
         <div class="testimonial-box">
-            <p id="testimonial-text">"Desainnya modern dan clean." - User 1</p>
+            <p id="testimoni-text">"Desainnya modern dan clean."</p>
+            <p id="testimoni-user">- User 1</p>
         </div>
     </section>
 
-    <!-- Footer -->
     <footer>
-        <p>© 2025 HeilBitz</p>
-        <div class="social-links">
-            <a href="#">Discord</a>
-            <a href="#">YouTube</a>
-            <a href="#">Instagram</a>
-        </div>
+        <p>&copy; 2025 HeilBitz</p>
+        <a href="#">Discord</a>
+        <a href="#">YouTube</a>
+        <a href="#">Instagram</a>
     </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
